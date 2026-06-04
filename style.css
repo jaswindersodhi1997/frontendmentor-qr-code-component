@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-slate-300);
+}
+
+.qrCodeCard {
+  max-width: 320px;
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
+  padding: 16px 16px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.qrCodeCard__img {
+  width: 288px;
+  height: 288px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.qrCodeCard__body {
+  max-width: 288px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.qrCodeCard__title {
+  color: var(--color-slate-900);
+  font-weight: bold;
+  line-height: 120%;
+  font-size: 22px;
+}
+
+.qrCodeCard__description {
+  color: var(--color-slate-500);
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
