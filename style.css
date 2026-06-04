@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Outfit");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -14,8 +14,7 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,15 +30,12 @@ body {
   padding: 16px 16px 40px 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 24px;
 }
 
 .qrCodeCard__img {
-  width: 288px;
-  height: 288px;
-  object-fit: contain;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -55,9 +51,9 @@ body {
 
 .qrCodeCard__title {
   color: var(--color-slate-900);
-  font-weight: bold;
-  line-height: 120%;
+  font-weight: 700;
   font-size: 22px;
+  line-height: 1.2;
 }
 
 .qrCodeCard__description {
