@@ -59,7 +59,6 @@ body {
 
 .qrCodeCard__description {
   color: var(--color-slate-500);
-  font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.2px;
 }
